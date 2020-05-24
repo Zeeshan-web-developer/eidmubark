@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="particles.js"></script>
+    <script  src="app.js"></script>
+
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            background-image: url(bg.jpg);
+          
+            background-size: cover;
+            height: auto;
+        }
+        #particle-js
+        {
+            height: 100%;
+        }
+        p
+        {
+            color: white;
+            font-size: 50px;
+            transform: translateY(-600px);
+            text-align: center;
+            text-shadow: 2px 2px  red;
+
+        }
+
+        section::before
+        {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           background: url('imges.png'); 
+           animation-name: makeitrain;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-duration: 0.2s;
+            
+        }
+        @keyframes makeitrain {
+            0%
+            {
+               background-position: 0% 0%;
+               
+            }
+            100%
+            {
+                background-position: 10% 100%;
+            }
+            
+        }
+        @keyframes  makeitrain {
+            
+            0%,100%
+            {
+                filter: hue-rotate(0deg);
+
+            }
+            50%
+            {
+                filter: hue-rotate(360deg);
+            }
+        }
+        p::after
+        {
+            
+            content: '';
+            animation-name: text;
+            animation-duration: 7s;
+            animation-direction: normal;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            
+        }
+        p::before
+        {
+            display: block;
+            content: 'ZEESHAN AHMAD';
+            color: blue;
+            animation-name: text2;
+            animation-duration: 7s;
+            animation-direction: normal;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes text {
+            0%
+            {
+                content: 'TO U AND UR FAMILY';
+                border-bottom: 2px solid darkgreen;
+            }
+            20%
+            {
+                content: 'TO MY RELATIVES';
+                border-bottom: 2px solid darkgreen;
+
+            }
+            40%
+            {
+                content:'TO MY FRINDS' ;
+                border-bottom: 2px solid darkgreen;
+
+            }
+            
+            100%
+            {
+                content: 'TO ALL MUSLIMS';
+                border-bottom: 2px solid darkgreen;
+
+            }
+            
+        }
+
+        @keyframes text2 {
+            0%
+            {
+                color: darkblue;
+            }
+            20%
+            {
+                color: rgb(138, 14, 66);
+
+            }
+            40%
+            {
+                color: salmon;
+            }
+            
+            100%
+            {
+                color: lawngreen;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script  src="particles.js"></script>
+    <script  src="app.js"></script>
+
+    <p>EID MUBARK </p>
+     
+ 
+</body>
+</html>
